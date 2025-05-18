@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио Дениса Веретенникова - опыт управления почтовым отделением, достижения и профессиональные компетенции">
+    <meta name="keywords" content="начальник почты, управление отделением связи, почтовое отделение, оптимизация процессов, ритейл">
+    <meta name="author" content="Веретенников Д.А.">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="robots" content="index, follow">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io;">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Портфолио Дениса Веретенникова">
+    <meta property="og:description" content="6 месяцев успешного управления и развития почтового отделения">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Amato2114.github.io/portfolio/">
+    <meta property="og:image" content="https://Amato2114.github.io/portfolio/images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Портфолио Дениса Веретенникова">
+    <meta name="twitter:description" content="6 месяцев успешного управления и развития почтового отделения">
+    <meta name="twitter:image" content="https://Amato2114.github.io/portfolio/images/twitter-card.jpg">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Веретенников Денис Андреевич",
+        "jobTitle": "Начальник отделения почтовой связи",
+        "description": "Профессиональный руководитель с опытом управления командами и оптимизации процессов",
+        "email": "veretenni@bk.ru",
+        "telephone": "+7 (952) 081-32-26",
+        "url": "https://Amato2114.github.io/portfolio/",
+        "sameAs": ["https://vk.com/denishealingskills"]
+    }
+    </script>
+
+    <link rel="canonical" href="https://Amato2114.github.io/portfolio/">
+    <link rel="alternate" hreflang="ru" href="https://Amato2114.github.io/portfolio/">
+    <link rel="icon" href="/portfolio/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/portfolio/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <title>Портфолио Дениса Веретенникова | Управление и развитие</title>
+
+    <style>
+        :root {
+            --heading-font: 'Montserrat', sans-serif;
+            --body-font: 'Open Sans', sans-serif;
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f5f5f5;
+            --card-bg: #ffffff;
+            --success-color: #2ecc71;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #ffffff;
+                --bg-color: #1a1a1a;
+                --card-bg: #2d2d2d;
+                --secondary-color: #34495e;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+        }
+
+        body {
+            font-family: var(--body-font);
+            line-height: 1.8;
+            color: var(--text-color);
+            background: var(--bg-color);
+            font-size: 16px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .nav-container {
+            position: sticky;
+            top: 0;
+            background: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            margin: 0 1rem;
+        }
+
+        .nav-link {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--primary-color);
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .header {
+            background: var(--secondary-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: var(--card-bg);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .stats-box {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stats-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .achievement-card {
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            background: var(--card-bg);
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateX(5px);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: var(--secondary-color);
+        }
+
+        .skill-tag i {
+            margin-right: 0.5rem;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .metric-card {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .chart-container {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .chart-container figcaption {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .progress-chart {
+            margin: 1rem 0;
+        }
+
+        progress {
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        progress::-webkit-progress-value {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+
+        progress::-webkit-progress-bar {
+            background: var(--bg-color);
+            border-radius: 10px;
+        }
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-form label {
+            font-weight: 600;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.75rem;
+            border: 1px solid var(--text-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+        }
+
+        .contact-info h3 {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover,
+        .contact-info a:focus {
+            color: var(--primary-color);
+        }
+
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+
+        .resume-btn:hover,
+        .resume-btn:focus {
+            background: var(--secondary-color);
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: var(--secondary-color);
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .footer {
+            background: var(--secondary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            border-radius: 20px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-link:hover,
+        .social-link:focus {
+            background: white;
+            color: var(--secondary-color);
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        @media print {
+            .nav-container,
+            .footer {
+                display: none;
+            }
+
+            .section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            body {
+                color: black;
+                background: white;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-list {
+                justify-content: center;
+            }
+
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .contact-form,
+            .contact-info {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Перейти к основному содержимому</a>
+
+    <nav class="nav-container" aria-label="Основная навигация">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#achievements" class="nav-link">Достижения</a></li>
+            <li class="nav-item"><a href="#results" class="nav-link">Результаты</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
+            <li class="nav-item"><a href="#metrics" class="nav-link">Метрики</a></li>
+            <li class="nav-item"><a href="#innovations" class="nav-link">Инновации</a></li>
+            <li class="nav-item"><a href="#analytics" class="nav-link">Аналитика</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Денис Веретенников</h1>
+            <p>Начальник отделения почтовой связи | 6 месяцев успешного управления</p>
+            <a href="/portfolio/resume.pdf" download class="resume-btn" type="application/pdf" aria-label="Скачать резюме в формате PDF">
+                <i class="fas fa-file-pdf"></i> Скачать резюме (PDF)
+            </a>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section id="achievements" class="section" aria-labelledby="achievements-title">
+            <h2 id="achievements-title">Основные достижения</h2>
+            <div class="grid">
+                <article class="stats-box" role="article">
+                    <h3>Рост команды</h3>
+                    <p aria-label="Увеличение штата с 3 до 15 сотрудников">3 → 15 сотрудников</p>
+                </article>
+                <article class="stats-box" role="article">
+                    <h3>Оптимизация</h3>
+                    <p aria-label="Сокращение времени обслуживания на 35 процентов">-35% время обслуживания</p>
+                </article>
+                <article class="stats-box" role="article">
+                    <h3>Логистика</h3>
+                    <p aria-label="Сокращение времени доставки на 50 процентов">-50% время доставки</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="results" class="section" aria-labelledby="results-title">
+            <h2 id="results-title">Ключевые результаты</h2>
+            <div class="achievement-card">
+                <h3>Организационная структура</h3>
+                <p>Создал эффективную команду с четким распределением ролей, обеспечив бесперебойную работу отделения:</p>
+                <ul aria-label="Структура персонала">
+                    <li>4 оператора</li>
+                    <li>7 почтальонов</li>
+                    <li>1 администратор</li>
+                    <li>1 заместитель</li>
+                    <li>1 водитель</li>
+                    <li>1 сортировщик</li>
+                </ul>
+            </div>
+            <div class="progress-chart">
+                <label for="progress">Рост производительности:</label>
+                <progress id="progress" value="75" max="100">75%</progress>
+            </div>
+        </section>
+
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <h2 id="skills-title">Профессиональные компетенции</h2>
+            <div class="skills-list" role="list">
+                <span class="skill-tag" role="listitem"><i class="fas fa-users"></i> Управление персоналом</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-cogs"></i> Организация бизнес-процессов</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-truck"></i> Оптимизация логистики</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-file-alt"></i> Работа с документацией</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-star"></i> Развитие сервиса</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-check-circle"></i> Управление качеством</span>
+            </div>
+        </section>
+
+        <section id="metrics" class="section" aria-labelledby="metrics-title">
+            <h2 id="metrics-title">Измеримые показатели</h2>
+            <div class="metrics">
+                <div class="metric-card" role="article">
+                    <h3>+75%</h3>
+                    <p>Рост производительности</p>
+                </div>
+                <div class="metric-card" role="article">
+                    <h3>-25%</h3>
+                    <p>Сокращение затрат</p>
+                </div>
+                <div class="metric-card" role="article">
+                    <h3>x2.5</h3>
+                    <p>Увеличение объема услуг</p>
+                </div>
+                <div class="metric-card" role="article">
+                    <h3>85%</h3>
+                    <p>Удовлетворенность клиентов</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="innovations" class="section" aria-labelledby="innovations-title">
+            <h2 id="innovations-title">Внедренные инновации</h2>
+            <div class="grid">
+                <div>
+                    <h3>Технологические решения</h3>
+                    <ul class="innovation-list">
+                        <li class="innovation-item">Автоматизация учета</li>
+                        <li class="innovation-item">Электронная очередь</li>
+                        <li class="innovation-item">Мобильные терминалы</li>
+                        <li class="innovation-item">Система навигации</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Организационные меры</h3>
+                    <ul class="innovation-list">
+                        <li class="innovation-item">Новые стандарты обслуживания</li>
+                        <li class="innovation-item">График сменности</li>
+                        <li class="innovation-item">Система мотивации</li>
+                        <li class="innovation-item">Контроль качества</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="analytics" class="section" aria-labelledby="analytics-title">
+            <h2 id="analytics-title">Аналитика эффективности</h2>
+            <div class="analytics-grid grid">
+                <div class="chart-container">
+                    <canvas id="performanceChart" role="img" aria-label="График производительности команды"></canvas>
+                    <figcaption>График показывает рост производительности команды с июля по декабрь 2024 года, с увеличением с 45% до 85%.</figcaption>
+                </div>
+                <div class="chart-container">
+                    <canvas id="satisfactionChart" role="img" aria-label="График удовлетворенности клиентов"></canvas>
+                    <figcaption>Рост удовлетворенности клиентов с 65% в первом квартале до 85% во втором квартале 2024 года.</figcaption>
+                </div>
+                <div class="chart-container">
+                    <canvas id="teamChart" role="img" aria-label="График эффективности команды"></canvas>
+                    <figcaption>Оценка эффективности команды по ключевым параметрам: скорость, качество, инновации и обучаемость.</figcaption>
+                </div>
+                <div class="chart-container">
+                    <canvas id="processChart" role="img" aria-label="График оптимизации процессов"></canvas>
+                    <figcaption>Статус оптимизации процессов: 65% автоматизировано, 20% в процессе, 15% планируется.</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Связаться со мной</h2>
+            <div class="contact-section">
+                <form action="https://formspree.io/f/xyzwoneg" method="POST" class="contact-form" aria-describedby="form-description">
+                    <p id="form-description" class="sr-only">Форма для отправки сообщения Денису Веретенникову</p>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:veretenni@bk.ru">veretenni@bk.ru</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+79520813226">+7 (952) 081-32-26</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-vk"></i>
+                        <a href="https://vk.com/denishealingskills" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+                    </p>
+                    <a href="/portfolio/resume.pdf" download class="resume-btn" type="application/pdf" aria-label="Скачать резюме в формате PDF">
+                        <i class="fas fa-file-pdf"></i> Скачать резюме (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p>
+                        <span aria-label="Email">Email: </span>
+                        <a href="mailto:veretenni@bk.ru" class="contact-link">veretenni@bk.ru</a>
+                    </p>
+                    <p>
+                        <span aria-label="Телефон">Телефон: </span>
+                        <a href="tel:+79520813226" class="contact-link">+7 (952) 081-32-26</a>
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="https://vk.com/denishealingskills" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Профиль ВКонтакте">
+                        <i class="fab fa-vk"></i> ВКонтакте
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Веретенников Д.А. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function initCharts() {
+            new Chart(document.getElementById('performanceChart'), {
+                type: 'line',
+                data: {
+                    labels: ['Июль 2024', 'Авг 2024', 'Сен 2024', 'Окт 2024', 'Ноя 2024', 'Дек 2024'],
+                    datasets: [{
+                        label: 'Производительность команды (%)',
+                        data: [45, 55, 65, 70, 75, 85],
+                        borderColor: '#3498db',
+                        tension: 0.4,
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: { display: true, text: 'Динамика производительности (Июль-Декабрь 2024)' },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${context.parsed.y}%`;
+                                }
+                            }
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('satisfactionChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Q1 2024', 'Q2 2024'],
+                    datasets: [{
+                        label: 'Удовлетворенность клиентов (%)',
+                        data: [65, 85],
+                        backgroundColor: '#2ecc71'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: { display: true, text: 'Рост удовлетворенности клиентов' }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('teamChart'), {
+                type: 'radar',
+                data: {
+                    labels: ['Скорость', 'Качество', 'Командная работа', 'Инновации', 'Обучаемость'],
+                    datasets: [{
+                        label: 'Эффективность команды',
+                        data: [85, 90, 88, 82, 95],
+                        backgroundColor: 'rgba(52, 152, 219, 0.2)',
+                        borderColor: '#3498db',
+                        pointBackgroundColor: '#3498db'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: { display: true, text: 'Показатели эффективности команды' }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('processChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Автоматизировано', 'В процессе', 'Планируется'],
+                    datasets: [{
+                        data: [65, 20, 15],
+                        backgroundColor: ['#2ecc71', '#f1c40f', '#e74c3c']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: { display: true, text: 'Статус оптимизации процессов' }
+                    }
+                }
+            });
+        }
+
+        // Загрузка графиков при прокрутке до раздела analytics
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    initCharts();
+                    observer.disconnect();
+                }
+            });
+        });
+
+        observer.observe(document.getElementById('analytics'));
+
+        // Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/portfolio/sw.js')
+                    .then(registration => console.log('ServiceWorker registered'))
+                    .catch(error => console.error('ServiceWorker registration failed:', error));
+            });
+        }
+    </script>
+</body>
+</html>
