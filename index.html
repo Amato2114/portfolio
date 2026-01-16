@@ -777,6 +777,90 @@
             border-width: 0;
         }
 
+        /* Новые стили для списков обязанностей */
+        .duties-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .duty-category {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .duty-category:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .duty-category h4 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .duty-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .duty-category li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .duty-category li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Стили для дополнительных достижений */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .achievement-item {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--success-color);
+            transition: all 0.3s ease;
+        }
+
+        .achievement-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .achievement-item h4 {
+            color: var(--secondary-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-item p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
         @media print {
             .nav-container,
             .footer,
@@ -864,9 +948,13 @@
             .contact-info {
                 max-width: 100%;
             }
+
+            .duties-list {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
 
-        /* Контейнер для анимации появления */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -878,7 +966,6 @@
             transform: translateY(0);
         }
 
-        /* Скелетон для загрузки графиков */
         .chart-skeleton {
             background: linear-gradient(90deg, var(--bg-color) 25%, var(--border-color) 50%, var(--bg-color) 75%);
             background-size: 200% 100%;
@@ -892,12 +979,10 @@
             100% { background-position: -200% 0; }
         }
 
-        /* Анимация для счетчиков */
         .counter {
             font-variant-numeric: tabular-nums;
         }
 
-        /* Кастомный скроллбар */
         ::-webkit-scrollbar {
             width: 10px;
             height: 10px;
@@ -925,6 +1010,7 @@
         <ul class="nav-list">
             <li class="nav-item"><a href="#achievements" class="nav-link">Достижения</a></li>
             <li class="nav-item"><a href="#results" class="nav-link">Результаты</a></li>
+            <li class="nav-item"><a href="#duties" class="nav-link">Обязанности</a></li>
             <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
             <li class="nav-item"><a href="#metrics" class="nav-link">Метрики</a></li>
             <li class="nav-item"><a href="#innovations" class="nav-link">Инновации</a></li>
@@ -963,6 +1049,34 @@
                     <p style="font-size: 0.875rem; color: var(--text-light);">время доставки</p>
                 </article>
             </div>
+
+            <!-- Новый блок дополнительных достижений -->
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <h4>Повышение надежности доставки</h4>
+                    <p>Снижение потерь корреспонденции на 95% через внедрение системы контроля</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Рост продаж допуслуг</h4>
+                    <p>Увеличение продаж финансовых услуг на 180% за 6 месяцев</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Оптимизация штата</h4>
+                    <p>Сокращение внепланового отсутствия персонала с 12% до 3%</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Улучшение безопасности</h4>
+                    <p>Нулевой показатель несчастных случаев благодаря внедрению протоколов</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Прохождение проверок</h4>
+                    <p>100% успешное прохождение плановых и внеплановых проверок контролирующих органов</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Работа с жалобами</h4>
+                    <p>Снижение количества жалоб клиентов на 70% через улучшение сервиса</p>
+                </div>
+            </div>
         </section>
 
         <section id="results" class="section fade-in" aria-labelledby="results-title">
@@ -985,6 +1099,73 @@
             </div>
         </section>
 
+        <!-- Новый раздел обязанностей -->
+        <section id="duties" class="section fade-in" aria-labelledby="duties-title">
+            <h2 id="duties-title">Основные обязанности</h2>
+            <div class="duties-list">
+                <div class="duty-category">
+                    <h4><i class="fas fa-chart-line"></i> Стратегическое управление</h4>
+                    <ul>
+                        <li>Разработка и реализация стратегии развития отделения</li>
+                        <li>Планирование объемов услуг и финансовых показателей</li>
+                        <li>Формирование бюджета и контроль его исполнения</li>
+                        <li>Анализ рыночной ситуации и конкурентное позиционирование</li>
+                        <li>Отчетность перед руководством и контролирующими органами</li>
+                    </ul>
+                </div>
+                <div class="duty-category">
+                    <h4><i class="fas fa-users-cog"></i> Управление персоналом</h4>
+                    <ul>
+                        <li>Подбор, адаптация и обучение сотрудников (всего 15 чел.)</li>
+                        <li>Формирование графиков работы с учетом нагрузки</li>
+                        <li>Оценка эффективности и мотивация команды</li>
+                        <li>Проведение производственных совещаний и инструктажей</li>
+                        <li>Разрешение конфликтных ситуаций и кадровые вопросы</li>
+                    </ul>
+                </div>
+                <div class="duty-category">
+                    <h4><i class="fas fa-tasks"></i> Операционное управление</h4>
+                    <ul>
+                        <li>Контроль сортировки и доставки 5000+ ед. корреспонденции ежедневно</li>
+                        <li>Организация работы 4 операционных окон</li>
+                        <li>Управление парком транспорта (1 автомобиль, 7 маршрутов)</li>
+                        <li>Контроль соблюдения сроков доставки и качества обслуживания</li>
+                        <li>Обработка претензий и комплексных запросов клиентов</li>
+                    </ul>
+                </div>
+                <div class="duty-category">
+                    <h4><i class="fas fa-shield-alt"></i> Контроль и безопасность</h4>
+                    <ul>
+                        <li>Обеспечение сохранности почтовых отправлений и денежных средств</li>
+                        <li>Контроль соблюдения правил охраны труда и техники безопасности</li>
+                        <li>Проведение инвентаризаций и ревизий (100% сходимость)</li>
+                        <li>Взаимодействие с проверяющими органами (Роспотребнадзор, ЦБ)</li>
+                        <li>Формирование и хранение отчетной документации</li>
+                    </ul>
+                </div>
+                <div class="duty-category">
+                    <h4><i class="fas fa-handshake"></i> Работа с клиентами</h4>
+                    <ul>
+                        <li>Привлечение и удержание корпоративных клиентов</li>
+                        <li>Организация промо-акций и рекламных кампаний</li>
+                        <li>Развитие дополнительных услуг (финансы, страхование, e-commerce)</li>
+                        <li>Обучение персонала стандартам качества обслуживания</li>
+                        <li>Анализ обратной связи и внедрение улучшений</li>
+                    </ul>
+                </div>
+                <div class="duty-category">
+                    <h4><i class="fas fa-cogs"></i> Инновации и оптимизация</h4>
+                    <ul>
+                        <li>Внедрение электронной очереди и цифрового документооборота</li>
+                        <li>Автоматизация учета и отчетности</li>
+                        <li>Оптимизация маршрутов доставки (экономия 50% времени)</li>
+                        <li>Разработка стандартов оказания услуг</li>
+                        <li>Анализ KPI и внедрение улучшений процессов</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="skills" class="section fade-in" aria-labelledby="skills-title">
             <h2 id="skills-title">Профессиональные компетенции</h2>
             <div class="skills-list" role="list">
@@ -994,6 +1175,10 @@
                 <span class="skill-tag" role="listitem"><i class="fas fa-file-alt"></i> Работа с документацией</span>
                 <span class="skill-tag" role="listitem"><i class="fas fa-star"></i> Развитие сервиса</span>
                 <span class="skill-tag" role="listitem"><i class="fas fa-check-circle"></i> Управление качеством</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-chart-bar"></i> Финансовое планирование</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-shield-alt"></i> Контроль безопасности</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-comments"></i> B2B переговоры</span>
+                <span class="skill-tag" role="listitem"><i class="fas fa-robot"></i> Цифровая трансформация</span>
             </div>
         </section>
 
@@ -1143,7 +1328,6 @@
     </footer>
 
     <script>
-        // Анимация появления при прокрутке
         function initScrollAnimations() {
             const sections = document.querySelectorAll('.fade-in');
             const observer = new IntersectionObserver((entries) => {
@@ -1162,7 +1346,6 @@
             });
         }
 
-        // Анимация счетчиков
         function initCounters() {
             const counters = document.querySelectorAll('.counter');
             const counterObserver = new IntersectionObserver((entries) => {
@@ -1185,10 +1368,7 @@
                 const hasArrow = finalValue.includes('→');
                 const isRange = /\d+ → \d+/.test(finalValue);
 
-                // Сохраняем финальный текст
                 element.textContent = finalValue;
-                
-                // Добавляем эффект печати
                 element.style.opacity = '0';
                 element.style.transform = 'scale(0.9)';
                 
@@ -1200,7 +1380,6 @@
             }
         }
 
-        // Инициализация графиков с удалением скелета
         function initCharts() {
             const chartContainers = document.querySelectorAll('.chart-skeleton');
             chartContainers.forEach(container => {
@@ -1349,7 +1528,6 @@
             });
         }
 
-        // Загрузка графиков при прокрутке до раздела analytics
         const chartObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1361,13 +1539,11 @@
 
         chartObserver.observe(document.getElementById('analytics'));
 
-        // Инициализация всех анимаций при загрузке
         document.addEventListener('DOMContentLoaded', () => {
             initScrollAnimations();
             initCounters();
         });
 
-        // Улучшенная обработка формы с обратной связью
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             const submitBtn = this.querySelector('.btn');
             const originalText = submitBtn.innerHTML;
@@ -1387,7 +1563,6 @@
             }, 1000);
         });
 
-        // Service Worker (оставлен без изменений)
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/portfolio/sw.js')
