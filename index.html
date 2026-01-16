@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- SEO и мета-теги оставлены без изменений -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Портфолио Дениса Веретенникова - опыт управления почтовым отделением, достижения и профессиональные компетенции">
     <meta name="keywords" content="начальник почты, управление отделением связи, почтовое отделение, оптимизация процессов, ритейл">
     <meta name="author" content="Веретенников Д.А.">
-    <meta name="theme-color" content="#2c3e50">
+    <meta name="theme-color" content="#0a192f">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="BFLpqY_ChqUhp2bC33TU9Cuibd-PAFa2csDp_F9OkUA" />
-
-    <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io;">
-
-    <!-- Open Graph -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com ; font-src https://fonts.gstatic.com ; img-src 'self' data: https:; connect-src 'self' https://formspree.io ;">
     <meta property="og:title" content="Портфолио Дениса Веретенникова">
     <meta property="og:description" content="6 месяцев успешного управления и развития почтового отделения">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://Amato2114.github.io/portfolio/">
     <meta property="og:image" content="https://Amato2114.github.io/portfolio/images/og-image.jpg">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Портфолио Дениса Веретенникова">
     <meta name="twitter:description" content="6 месяцев успешного управления и развития почтового отделения">
     <meta name="twitter:image" content="https://Amato2114.github.io/portfolio/images/twitter-card.jpg">
-
-    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -43,40 +36,51 @@
         "sameAs": ["https://vk.com/denishealingskills"]
     }
     </script>
-
     <link rel="canonical" href="https://Amato2114.github.io/portfolio/">
     <link rel="alternate" hreflang="ru" href="https://Amato2114.github.io/portfolio/">
     <link rel="icon" href="/portfolio/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/portfolio/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-
     <title>Портфолио Дениса Веретенникова | Управление и развитие</title>
 
     <style>
         :root {
-            --heading-font: 'Montserrat', sans-serif;
-            --body-font: 'Open Sans', sans-serif;
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --text-color: #333;
-            --bg-color: #f5f5f5;
+            --heading-font: 'Manrope', sans-serif;
+            --body-font: 'Inter', sans-serif;
+            --primary-color: #0ea5e9;
+            --secondary-color: #0a192f;
+            --accent-color: #38bdf8;
+            --text-color: #1e293b;
+            --text-light: #64748b;
+            --bg-color: #f8fafc;
             --card-bg: #ffffff;
-            --success-color: #2ecc71;
-            --warning-color: #f1c40f;
-            --danger-color: #e74c3c;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+            --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #0a192f 100%);
+            --gradient-accent: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+            --glass-bg: rgba(255, 255, 255, 0.85);
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --text-color: #ffffff;
-                --bg-color: #1a1a1a;
-                --card-bg: #2d2d2d;
-                --secondary-color: #34495e;
+                --text-color: #f1f5f9;
+                --text-light: #94a3b8;
+                --bg-color: #0f172a;
+                --card-bg: #1e293b;
+                --secondary-color: #0f172a;
+                --border-color: #334155;
+                --glass-bg: rgba(15, 23, 42, 0.85);
             }
         }
 
@@ -95,15 +99,16 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 70px;
+            scroll-padding-top: 90px;
         }
 
         body {
             font-family: var(--body-font);
-            line-height: 1.8;
+            line-height: 1.6;
             color: var(--text-color);
             background: var(--bg-color);
             font-size: 16px;
+            font-weight: 400;
         }
 
         .skip-link {
@@ -112,9 +117,11 @@
             left: 0;
             background: var(--primary-color);
             color: white;
-            padding: 8px;
-            z-index: 100;
+            padding: 8px 16px;
+            z-index: 10000;
             transition: top 0.3s;
+            border-radius: 0 0 4px 0;
+            font-weight: 600;
         }
 
         .skip-link:focus {
@@ -124,201 +131,471 @@
         .nav-container {
             position: sticky;
             top: 0;
-            background: var(--card-bg);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-md);
             z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .nav-list {
             display: flex;
             justify-content: center;
             list-style: none;
-            padding: 1rem 0;
+            padding: 1.25rem 0;
             margin: 0;
+            flex-wrap: wrap;
         }
 
         .nav-item {
-            margin: 0 1rem;
+            margin: 0.25rem 0.75rem;
         }
 
         .nav-link {
             color: var(--text-color);
             text-decoration: none;
             padding: 0.5rem 1rem;
-            transition: color 0.3s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 500;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 2px;
         }
 
         .nav-link:hover,
         .nav-link:focus {
             color: var(--primary-color);
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
+            outline: none;
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus::after {
+            width: 70%;
         }
 
         .header {
-            background: var(--secondary-color);
+            background: var(--gradient-primary);
             color: white;
-            padding: 3rem 0;
+            padding: 5rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(14, 165, 233, 0.1) 0%, transparent 40%);
+            pointer-events: none;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 1.5rem;
         }
 
         .section {
             background: var(--card-bg);
-            margin: 2rem 0;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 3rem 0;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(0);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-5px);
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 4px 4px 0 0;
+        }
+
+        h1 {
+            font-family: var(--heading-font);
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-family: var(--heading-font);
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--secondary-color);
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1.5rem;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 1.5rem;
         }
 
         .stats-box {
             background: var(--bg-color);
-            padding: 1.5rem;
-            border-radius: 8px;
+            padding: 2rem;
+            border-radius: 12px;
             text-align: center;
-            transition: transform 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(4px);
         }
 
         .stats-box:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stats-box h3 {
+            color: var(--primary-color);
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .stats-box p {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            font-family: var(--heading-font);
+            margin: 0.5rem 0;
         }
 
         .achievement-card {
-            border-left: 4px solid var(--primary-color);
-            padding: 1rem;
-            margin: 1rem 0;
             background: var(--card-bg);
-            transition: transform 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.75rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            position: relative;
         }
 
         .achievement-card:hover {
-            transform: translateX(5px);
+            transform: translateX(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .achievement-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-accent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .achievement-card:hover::before {
+            opacity: 0.02;
+        }
+
+        .achievement-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .achievement-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .achievement-card ul {
+            margin-top: 1rem;
+            padding-left: 1.25rem;
+        }
+
+        .achievement-card li {
+            position: relative;
+            padding-left: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-card li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -1rem;
+            font-size: 1.25rem;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.75rem;
+            margin-top: 1rem;
         }
 
         .skill-tag {
-            background: var(--primary-color);
+            background: var(--gradient-accent);
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            transition: background-color 0.3s;
+            padding: 0.625rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            box-shadow: var(--shadow-sm);
         }
 
         .skill-tag:hover {
-            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
         }
 
         .skill-tag i {
             margin-right: 0.5rem;
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-tag:hover i {
+            transform: scale(1.2);
         }
 
         .metrics {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
 
         .metric-card {
-            background: var(--secondary-color);
-            color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
             text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .metric-card h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+
+        .metric-card:hover h3 {
+            color: white;
+        }
+
+        .metric-card p {
+            color: var(--text-light);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .metric-card:hover p {
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .chart-container {
             background: var(--card-bg);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+        }
+
+        .chart-container:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
         }
 
         .chart-container figcaption {
             text-align: center;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            color: var(--text-color);
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            color: var(--text-light);
+            font-weight: 500;
+            line-height: 1.5;
         }
 
         .progress-chart {
-            margin: 1rem 0;
+            margin: 1.5rem 0;
         }
 
         progress {
             width: 100%;
-            height: 20px;
-            border-radius: 10px;
+            height: 28px;
+            border-radius: 14px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            overflow: hidden;
+            position: relative;
         }
 
         progress::-webkit-progress-value {
-            background: var(--primary-color);
-            border-radius: 10px;
+            background: var(--gradient-accent);
+            border-radius: 14px;
+            transition: width 1s ease;
         }
 
         progress::-webkit-progress-bar {
             background: var(--bg-color);
-            border-radius: 10px;
+            border-radius: 14px;
+        }
+
+        progress::-moz-progress-bar {
+            background: var(--gradient-accent);
+            border-radius: 14px;
+        }
+
+        label[for="progress"] {
+            font-weight: 600;
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.75rem;
         }
 
         .contact-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            gap: 2.5rem;
             align-items: start;
+            margin-top: 1.5rem;
         }
 
         .contact-form {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.25rem;
             max-width: 500px;
             background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
         }
 
         .contact-form label {
             font-weight: 600;
+            color: var(--text-color);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: -0.5rem;
         }
 
         .contact-form input,
         .contact-form textarea {
-            padding: 0.75rem;
-            border: 1px solid var(--text-color);
-            border-radius: 5px;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
             font-size: 1rem;
-            transition: border-color 0.3s;
+            transition: all 0.3s ease;
+            background: var(--bg-color);
+            font-family: var(--body-font);
         }
 
         .contact-form input:focus,
         .contact-form textarea:focus {
             border-color: var(--primary-color);
             outline: none;
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
         }
 
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.25rem;
             max-width: 500px;
         }
 
@@ -326,117 +603,192 @@
             font-family: var(--heading-font);
             font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: var(--secondary-color);
         }
 
         .contact-info p {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
+            gap: 0.75rem;
+            font-size: 1.125rem;
+            font-weight: 500;
         }
 
         .contact-info i {
             color: var(--primary-color);
+            font-size: 1.25rem;
+            width: 24px;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
 
         .contact-info a {
             color: var(--text-color);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        .contact-info a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: width 0.3s ease;
         }
 
         .contact-info a:hover,
         .contact-info a:focus {
             color: var(--primary-color);
+            outline: none;
         }
 
-        .resume-btn {
+        .contact-info a:hover::after {
+            width: 100%;
+        }
+
+        .contact-info a:hover i {
+            transform: translateY(-2px);
+        }
+
+        .resume-btn,
+        .btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--primary-color);
+            background: var(--gradient-primary);
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
+            padding: 1rem 2rem;
+            border-radius: 8px;
             text-decoration: none;
-            transition: background 0.3s;
-            margin-top: 1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            letter-spacing: 0.025em;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .resume-btn::before,
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
         }
 
         .resume-btn:hover,
-        .resume-btn:focus {
-            background: var(--secondary-color);
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
-        }
-
-        .btn {
-            background: var(--primary-color);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            display: inline-block;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
         .btn:hover,
+        .resume-btn:focus,
         .btn:focus {
-            background: var(--secondary-color);
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            outline: none;
+        }
+
+        .resume-btn:hover::before,
+        .btn:hover::before {
+            transform: translateX(100%);
         }
 
         .footer {
-            background: var(--secondary-color);
+            background: var(--gradient-primary);
             color: white;
-            padding: 3rem 0;
-            margin-top: 4rem;
+            padding: 4rem 0 2rem;
+            margin-top: 5rem;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         .social-links {
             display: flex;
             gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .social-link {
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 1px solid white;
-            border-radius: 20px;
-            transition: all 0.3s;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
         }
 
         .social-link:hover,
         .social-link:focus {
-            background: white;
-            color: var(--secondary-color);
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            outline: none;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.8;
+            font-size: 0.875rem;
+        }
+
+        #form-description {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
         }
 
         @media print {
             .nav-container,
-            .footer {
+            .footer,
+            .contact-form {
                 display: none;
             }
 
             .section {
                 break-inside: avoid;
                 page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
             }
 
             body {
@@ -448,20 +800,55 @@
                 text-decoration: none;
                 color: black;
             }
+
+            .chart-container {
+                page-break-inside: avoid;
+            }
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 1rem;
+                padding: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.875rem;
+            }
+
+            .section {
+                padding: 1.75rem;
+                margin: 2rem 0;
             }
 
             .grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
 
             .nav-list {
                 flex-direction: column;
-                align-items: center;
+                align-items: stretch;
+                padding: 1rem 0;
+                gap: 0.5rem;
+            }
+
+            .nav-item {
+                margin: 0;
+            }
+
+            .nav-link {
+                display: block;
+                text-align: center;
+                padding: 0.75rem;
+            }
+
+            .nav-link:hover::after,
+            .nav-link:focus::after {
+                width: 40%;
             }
 
             .skills-list {
@@ -470,13 +857,64 @@
 
             .contact-section {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
+                gap: 1.75rem;
             }
 
             .contact-form,
             .contact-info {
                 max-width: 100%;
             }
+        }
+
+        /* Контейнер для анимации появления */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Скелетон для загрузки графиков */
+        .chart-skeleton {
+            background: linear-gradient(90deg, var(--bg-color) 25%, var(--border-color) 50%, var(--bg-color) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            height: 300px;
+            border-radius: 8px;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Анимация для счетчиков */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Кастомный скроллбар */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+            border: 2px solid var(--bg-color);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-color);
         }
     </style>
 </head>
@@ -506,30 +944,33 @@
     </header>
 
     <main id="main" class="container">
-        <section id="achievements" class="section" aria-labelledby="achievements-title">
+        <section id="achievements" class="section fade-in" aria-labelledby="achievements-title">
             <h2 id="achievements-title">Основные достижения</h2>
             <div class="grid">
                 <article class="stats-box" role="article">
                     <h3>Рост команды</h3>
-                    <p aria-label="Увеличение штата с 3 до 15 сотрудников">3 → 15 сотрудников</p>
+                    <p class="counter" aria-label="Увеличение штата с 3 до 15 сотрудников">3 → 15</p>
+                    <p style="font-size: 0.875rem; color: var(--text-light);">сотрудников</p>
                 </article>
                 <article class="stats-box" role="article">
                     <h3>Оптимизация</h3>
-                    <p aria-label="Сокращение времени обслуживания на 35 процентов">-35% время обслуживания</p>
+                    <p class="counter" aria-label="Сокращение времени обслуживания на 35 процентов">-35%</p>
+                    <p style="font-size: 0.875rem; color: var(--text-light);">время обслуживания</p>
                 </article>
                 <article class="stats-box" role="article">
                     <h3>Логистика</h3>
-                    <p aria-label="Сокращение времени доставки на 50 процентов">-50% время доставки</p>
+                    <p class="counter" aria-label="Сокращение времени доставки на 50 процентов">-50%</p>
+                    <p style="font-size: 0.875rem; color: var(--text-light);">время доставки</p>
                 </article>
             </div>
         </section>
 
-        <section id="results" class="section" aria-labelledby="results-title">
+        <section id="results" class="section fade-in" aria-labelledby="results-title">
             <h2 id="results-title">Ключевые результаты</h2>
             <div class="achievement-card">
                 <h3>Организационная структура</h3>
                 <p>Создал эффективную команду с четким распределением ролей, обеспечив бесперебойную работу отделения:</p>
-                <ul aria-label="Структура персонала">
+                <ul aria-label="Структура персонала" style="margin-top: 1rem;">
                     <li>4 оператора</li>
                     <li>7 почтальонов</li>
                     <li>1 администратор</li>
@@ -544,7 +985,7 @@
             </div>
         </section>
 
-        <section id="skills" class="section" aria-labelledby="skills-title">
+        <section id="skills" class="section fade-in" aria-labelledby="skills-title">
             <h2 id="skills-title">Профессиональные компетенции</h2>
             <div class="skills-list" role="list">
                 <span class="skill-tag" role="listitem"><i class="fas fa-users"></i> Управление персоналом</span>
@@ -556,86 +997,102 @@
             </div>
         </section>
 
-        <section id="metrics" class="section" aria-labelledby="metrics-title">
+        <section id="metrics" class="section fade-in" aria-labelledby="metrics-title">
             <h2 id="metrics-title">Измеримые показатели</h2>
             <div class="metrics">
                 <div class="metric-card" role="article">
-                    <h3>+75%</h3>
+                    <h3 class="counter">+75%</h3>
                     <p>Рост производительности</p>
                 </div>
                 <div class="metric-card" role="article">
-                    <h3>-25%</h3>
+                    <h3 class="counter">-25%</h3>
                     <p>Сокращение затрат</p>
                 </div>
                 <div class="metric-card" role="article">
-                    <h3>x2.5</h3>
+                    <h3 class="counter">x2.5</h3>
                     <p>Увеличение объема услуг</p>
                 </div>
                 <div class="metric-card" role="article">
-                    <h3>85%</h3>
+                    <h3 class="counter">85%</h3>
                     <p>Удовлетворенность клиентов</p>
                 </div>
             </div>
         </section>
 
-        <section id="innovations" class="section" aria-labelledby="innovations-title">
+        <section id="innovations" class="section fade-in" aria-labelledby="innovations-title">
             <h2 id="innovations-title">Внедренные инновации</h2>
             <div class="grid">
                 <div>
                     <h3>Технологические решения</h3>
-                    <ul class="innovation-list">
-                        <li class="innovation-item">Автоматизация учета</li>
-                        <li class="innovation-item">Электронная очередь</li>
-                        <li class="innovation-item">Мобильные терминалы</li>
-                        <li class="innovation-item">Система навигации</li>
+                    <ul class="innovation-list" style="list-style: none; padding: 0;">
+                        <li class="innovation-item" style="padding: 0.75rem 0; border-bottom: 1px dashed var(--border-color);">
+                            <i class="fas fa-robot" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Автоматизация учета
+                        </li>
+                        <li class="innovation-item" style="padding: 0.75rem 0; border-bottom: 1px dashed var(--border-color);">
+                            <i class="fas fa-list-ol" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Электронная очередь
+                        </li>
+                        <li class="innovation-item" style="padding: 0.75rem 0; border-bottom: 1px dashed var(--border-color);">
+                            <i class="fas fa-mobile-alt" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Мобильные терминалы
+                        </li>
+                        <li class="innovation-item" style="padding: 0.75rem 0;">
+                            <i class="fas fa-map-marked-alt" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Система навигации
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h3>Организационные меры</h3>
-                    <ul class="innovation-list">
-                        <li class="innovation-item">Новые стандарты обслуживания</li>
-                        <li class="innovation-item">График сменности</li>
-                        <li class="innovation-item">Система мотивации</li>
-                        <li class="innovation-item">Контроль качества</li>
+                    <ul class="innovation-list" style="list-style: none; padding: 0;">
+                        <li class="innovation-item" style="padding: 0.75rem 0; border-bottom: 1px dashed var(--border-color);">
+                            <i class="fas fa-award" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Новые стандарты обслуживания
+                        </li>
+                        <li class="innovation-item" style="padding: 0.75rem 0; border-bottom: 1px dashed var(--border-color);">
+                            <i class="fas fa-calendar-alt" style="color: var(--primary-color); margin-right: 0.75rem;"></i> График сменности
+                        </li>
+                        <li class="innovation-item" style="padding: 0.75rem 0; border-bottom: 1px dashed var(--border-color);">
+                            <i class="fas fa-chart-line" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Система мотивации
+                        </li>
+                        <li class="innovation-item" style="padding: 0.75rem 0;">
+                            <i class="fas fa-shield-alt" style="color: var(--primary-color); margin-right: 0.75rem;"></i> Контроль качества
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="analytics" class="section" aria-labelledby="analytics-title">
+        <section id="analytics" class="section fade-in" aria-labelledby="analytics-title">
             <h2 id="analytics-title">Аналитика эффективности</h2>
             <div class="analytics-grid grid">
-                <div class="chart-container">
+                <div class="chart-container chart-skeleton" id="chart1">
                     <canvas id="performanceChart" role="img" aria-label="График производительности команды"></canvas>
                     <figcaption>График показывает рост производительности команды с июля по декабрь 2024 года, с увеличением с 45% до 85%.</figcaption>
                 </div>
-                <div class="chart-container">
+                <div class="chart-container chart-skeleton" id="chart2">
                     <canvas id="satisfactionChart" role="img" aria-label="График удовлетворенности клиентов"></canvas>
                     <figcaption>Рост удовлетворенности клиентов с 65% в первом квартале до 85% во втором квартале 2024 года.</figcaption>
                 </div>
-                <div class="chart-container">
+                <div class="chart-container chart-skeleton" id="chart3">
                     <canvas id="teamChart" role="img" aria-label="График эффективности команды"></canvas>
                     <figcaption>Оценка эффективности команды по ключевым параметрам: скорость, качество, инновации и обучаемость.</figcaption>
                 </div>
-                <div class="chart-container">
+                <div class="chart-container chart-skeleton" id="chart4">
                     <canvas id="processChart" role="img" aria-label="График оптимизации процессов"></canvas>
                     <figcaption>Статус оптимизации процессов: 65% автоматизировано, 20% в процессе, 15% планируется.</figcaption>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <section id="contact" class="section contact-section fade-in" aria-labelledby="contact-title">
             <h2 id="contact-title">Связаться со мной</h2>
             <div class="contact-section">
                 <form action="https://formspree.io/f/xyzwoneg" method="POST" class="contact-form" aria-describedby="form-description">
                     <p id="form-description" class="sr-only">Форма для отправки сообщения Денису Веретенникову</p>
                     <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Введите ваше имя">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="your@email.com">
                     <label for="message">Сообщение:</label>
-                    <textarea id="message" name="message" required aria-required="true"></textarea>
-                    <button type="submit" class="btn">Отправить</button>
+                    <textarea id="message" name="message" required aria-required="true" rows="6" placeholder="Расскажите о вашем предложении..."></textarea>
+                    <button type="submit" class="btn">Отправить сообщение</button>
                 </form>
                 <div class="contact-info">
                     <h3>Контактная информация</h3>
@@ -686,34 +1143,108 @@
     </footer>
 
     <script>
+        // Анимация появления при прокрутке
+        function initScrollAnimations() {
+            const sections = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Анимация счетчиков
+        function initCounters() {
+            const counters = document.querySelectorAll('.counter');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                        entry.target.classList.add('animated');
+                        animateCounter(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => {
+                counterObserver.observe(counter);
+            });
+
+            function animateCounter(element) {
+                const finalValue = element.textContent;
+                const isPercentage = finalValue.includes('%');
+                const isMultiplier = finalValue.includes('x');
+                const hasArrow = finalValue.includes('→');
+                const isRange = /\d+ → \d+/.test(finalValue);
+
+                // Сохраняем финальный текст
+                element.textContent = finalValue;
+                
+                // Добавляем эффект печати
+                element.style.opacity = '0';
+                element.style.transform = 'scale(0.9)';
+                
+                setTimeout(() => {
+                    element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    element.style.opacity = '1';
+                    element.style.transform = 'scale(1)';
+                }, 100);
+            }
+        }
+
+        // Инициализация графиков с удалением скелета
         function initCharts() {
+            const chartContainers = document.querySelectorAll('.chart-skeleton');
+            chartContainers.forEach(container => {
+                container.classList.remove('chart-skeleton');
+            });
+
             new Chart(document.getElementById('performanceChart'), {
                 type: 'line',
                 data: {
-                    labels: ['Июль 2024', 'Авг 2024', 'Сен 2024', 'Окт 2024', 'Ноя 2024', 'Дек 2024'],
+                    labels: ['Июль', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек 2024'],
                     datasets: [{
-                        label: 'Производительность команды (%)',
+                        label: 'Производительность команды',
                         data: [45, 55, 65, 70, 75, 85],
-                        borderColor: '#3498db',
+                        borderColor: '#0ea5e9',
+                        backgroundColor: 'rgba(14, 165, 233, 0.1)',
                         tension: 0.4,
-                        fill: false
+                        fill: true,
+                        borderWidth: 3,
+                        pointRadius: 6,
+                        pointHoverRadius: 8,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#0ea5e9',
+                        pointBorderWidth: 3
                     }]
                 },
                 options: {
                     responsive: true,
                     plugins: {
-                        title: { display: true, text: 'Динамика производительности (Июль-Декабрь 2024)' },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return `${context.dataset.label}: ${context.parsed.y}%`;
-                                }
-                            }
-                        }
+                        title: { 
+                            display: true, 
+                            text: 'Динамика производительности',
+                            font: { size: 16, weight: 'bold' }
+                        },
+                        legend: { display: false }
                     },
-                    interaction: {
-                        intersect: false,
-                        mode: 'index'
+                    scales: {
+                        y: { 
+                            beginAtZero: true, 
+                            max: 100,
+                            grid: { color: 'rgba(0,0,0,0.05)' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
                     }
                 }
             });
@@ -723,18 +1254,32 @@
                 data: {
                     labels: ['Q1 2024', 'Q2 2024'],
                     datasets: [{
-                        label: 'Удовлетворенность клиентов (%)',
+                        label: 'Удовлетворенность клиентов',
                         data: [65, 85],
-                        backgroundColor: '#2ecc71'
+                        backgroundColor: '#10b981',
+                        borderRadius: 8,
+                        borderSkipped: false
                     }]
                 },
                 options: {
                     responsive: true,
                     plugins: {
-                        title: { display: true, text: 'Рост удовлетворенности клиентов' }
+                        title: { 
+                            display: true, 
+                            text: 'Рост удовлетворенности клиентов',
+                            font: { size: 16, weight: 'bold' }
+                        },
+                        legend: { display: false }
                     },
                     scales: {
-                        y: { beginAtZero: true, max: 100 }
+                        y: { 
+                            beginAtZero: true, 
+                            max: 100,
+                            grid: { color: 'rgba(0,0,0,0.05)' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
                     }
                 }
             });
@@ -746,15 +1291,32 @@
                     datasets: [{
                         label: 'Эффективность команды',
                         data: [85, 90, 88, 82, 95],
-                        backgroundColor: 'rgba(52, 152, 219, 0.2)',
-                        borderColor: '#3498db',
-                        pointBackgroundColor: '#3498db'
+                        backgroundColor: 'rgba(14, 165, 233, 0.2)',
+                        borderColor: '#0ea5e9',
+                        borderWidth: 3,
+                        pointBackgroundColor: '#0ea5e9',
+                        pointHoverBackgroundColor: '#fff',
+                        pointBorderColor: '#0ea5e9',
+                        pointBorderWidth: 2
                     }]
                 },
                 options: {
                     responsive: true,
                     plugins: {
-                        title: { display: true, text: 'Показатели эффективности команды' }
+                        title: { 
+                            display: true, 
+                            text: 'Показатели эффективности команды',
+                            font: { size: 16, weight: 'bold' }
+                        },
+                        legend: { display: false }
+                    },
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: { color: 'rgba(0,0,0,0.05)' },
+                            angleLines: { color: 'rgba(0,0,0,0.05)' }
+                        }
                     }
                 }
             });
@@ -765,31 +1327,67 @@
                     labels: ['Автоматизировано', 'В процессе', 'Планируется'],
                     datasets: [{
                         data: [65, 20, 15],
-                        backgroundColor: ['#2ecc71', '#f1c40f', '#e74c3c']
+                        backgroundColor: ['#10b981', '#f59e0b', '#ef4444'],
+                        borderWidth: 0
                     }]
                 },
                 options: {
                     responsive: true,
+                    cutout: '65%',
                     plugins: {
-                        title: { display: true, text: 'Статус оптимизации процессов' }
+                        title: { 
+                            display: true, 
+                            text: 'Статус оптимизации процессов',
+                            font: { size: 16, weight: 'bold' }
+                        },
+                        legend: {
+                            position: 'bottom',
+                            labels: { padding: 20, usePointStyle: true }
+                        }
                     }
                 }
             });
         }
 
         // Загрузка графиков при прокрутке до раздела analytics
-        const observer = new IntersectionObserver((entries) => {
+        const chartObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     initCharts();
-                    observer.disconnect();
+                    chartObserver.disconnect();
                 }
             });
+        }, { threshold: 0.1 });
+
+        chartObserver.observe(document.getElementById('analytics'));
+
+        // Инициализация всех анимаций при загрузке
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollAnimations();
+            initCounters();
         });
 
-        observer.observe(document.getElementById('analytics'));
+        // Улучшенная обработка формы с обратной связью
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('.btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Отправлено!';
+                submitBtn.style.background = 'var(--success-color)';
+                
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = '';
+                }, 2000);
+            }, 1000);
+        });
 
-        // Service Worker
+        // Service Worker (оставлен без изменений)
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/portfolio/sw.js')
@@ -799,5 +1397,4 @@
         }
     </script>
 </body>
-
 </html>
